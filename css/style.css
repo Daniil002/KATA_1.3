@@ -7,6 +7,12 @@
     font-weight: normal; 
   } 
 
+button {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
 
 
 body {
@@ -128,8 +134,9 @@ a {
 }
 
 .navigation-main__item {
+    border: 2px solid transparent; /* Прозрачная рамка по умолчанию */
+    border-radius: 6px;
     margin-left: 25px;
-    color: rgb(126, 126, 130);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -142,6 +149,8 @@ a {
 .link_element:nth-child(5) {
     display: none;
 }
+
+
 
 .navigation-main__item:hover {
     border: 2px solid rgb(184, 255, 236);
@@ -163,7 +172,7 @@ a {
     display: none;
 }
 
-.title--second {
+.button {
     color: rgb(27, 28, 33);
     font-size: 16px;
     font-weight: 500;
@@ -171,9 +180,12 @@ a {
     letter-spacing: -0.2px;
     margin-left: 48px;
     position: relative;
+    border: none;
+    outline: none;
+    background-color: #F8F8F8;
 }
 
-.title--second::before {
+.button::before {
     content: "";
     background-image: url("../image/icon.png");
     position: absolute;
@@ -184,12 +196,12 @@ a {
 
 }
 
-.section__image {
+.article__image {
     max-width: 100%;
     height: auto
 }
 
-.section__text {
+.article__text {
     margin-left: 25px;
 
 }
@@ -207,17 +219,17 @@ a {
         display: block;
     }
 
-    section {
+    article {
         display: flex;
         justify-content: space-between;
         margin-top: 32px;
     }
 
-    .section__text {
+    .article__text {
         width: 312px;
     }
 
-    .section__image {
+    .article__image {
         height: 208px;
         width: 360px;
         margin-right: 28px;
@@ -268,6 +280,10 @@ a {
         
     }
 
+    button {
+        background-color:  #F8F8F8;
+    }
+
     .navigation-menu--first {
         display: none;
     }
@@ -300,7 +316,7 @@ a {
         font-weight: 500;
         line-height: 24px;
         letter-spacing: -0.2px;
-        right: 170px;
+        right: 180px;
         top: 8px;
 
     }
@@ -316,15 +332,15 @@ a {
         font-weight: 500;
         line-height: 24px;
         letter-spacing: -0.2px;
-        right: 65px;
+        right: 75px;
         top: 33px;
     }
 
-    .section__text {
+    .article__text {
         width: 490px;
     }
 
-    .section__image {
+    .article__image {
         width: 531px;
         height: 307px;
         border-radius: 10px;
